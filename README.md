@@ -1,7 +1,7 @@
 # Semi-supervised-segmentation
 Semi-supervised segmentation for well logs data
 
-Обучение с частичным привлечением учителя дл
+Обучение с частичным привлечением учителя
 
 В данной работе был исследован и выбран подход для сегментации числовых последовательностей с применением сетей глубокого обучения. Был проведен анализ различных архитектур нейронных сетей, включая полносвязную сеть, рекуррентную сеть LSTM и полносверточную сеть Unet, с учетом их способности эффективно обрабатывать последовательности и выполнять семантическую сегментацию.
 В результате анализа было принято решение использовать сеть Unet для сегментации числовых последовательностей. Unet представляет собой архитектуру, состоящую из энкодера и декодера, которые позволяют эффективно извлекать признаки из входных данных и восстанавливать исходное разрешение. Это особенно полезно для сегментации, где точность восстановления границ и деталей имеет большое значение.
@@ -20,8 +20,21 @@ Semi-supervised segmentation for well logs data
 ![image](https://github.com/AydSu/Semi-supervised-segmentation/assets/93270827/d2919ad7-51df-4a4f-8249-5eada911c01c)
 
 Матрица ошибок
+
 до применения алгоритма обучения с частичным првлечением учителя:
+
 ![image](https://github.com/AydSu/Semi-supervised-segmentation/assets/93270827/f390af29-5faa-4ded-973b-5076eecaca01)
+
 после применения алгоритма обучения с частичным првлечением учителя:
+
 ![image](https://github.com/AydSu/Semi-supervised-segmentation/assets/93270827/05a916c6-d4ed-471f-9f3c-29cdfcf93542)
+
+Данные:
+http://www.sepmstrata.org/page.aspx?pageid=168.
+https://www.crowdanalytix.com/contests/gamma-log-facies-type-prediction
+
+Статья с описанием алгоритма обучения с частичным привлечением учителя  :
+https://arxiv.org/pdf/1802.07934v2.pdf
+https://github.com/mohitzsh/Adversarial-Semisupervised-Semantic-Segmentation
+
 
